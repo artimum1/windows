@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>WINDOWS</title>
+    
+</head>
+<body oncontextmenu="return false">
+
+
+<input style="display: none;" type="file" id="background" accept="image/png , image/jpg">
+
+
+<div id="right">
+
+<div id="refresh"><p>Refresh</p></div><div id="hr"></div>
+<label id="background" for="background"><p>Change background</p></label>
+
+</div>
+
+<div id="taskB">
+  <div id="artimum"><p>A</p></div>
+
+  <div id="tasks"> 
+    <div onclick="binShow()" class="task" id="task1"></div>
+    <div onclick="FShow()" class="task" id="task2"></div>
+    <div onclick="webShow()" class="task" id="task3"></div>
+    <div onclick="aboutShow()" class="task" id="task4"></div>
+    <div onclick="gameShow()" class="task" id="task5"></div>
+    <div onclick="img1()" class="task" id="task6"></div>
+  </div>
+  <div id="clock"></div>
+</div>
+
+
+ <button id="container" class="container"></button>
+<div class="con">
+    <div id="selector-rectangle"></div>
+   
+   <button ondblclick="binShow()"  id="btn"  class="icon-btn i1"> <img  class="icons " src="src/bin-icon.png" alt="trash bin"></button> <br>
+  <button ondblclick="FShow()"  id="btn" class="icon-btn i2">  <img class="icons" src="src/folder-icon.png" alt="folder"></button> <br>
+  <button ondblclick="webShow()"  id="btn" class="icon-btn i3">   <img class="icons" src="src/browser-icon.png" alt="browser"> </button> <br>
+    <button ondblclick="aboutShow()"  id="btn" class="icon-btn i4">  <img class="icons" src="src/descktop-icon.png" alt="descktop"></button>
+    <button ondblclick="gameShow()" id="btn" class="icon-btn i5"><img class="icons" src="src/flappybird.png" alt=""></button>
+</div>
+    <div  id="container-bin" class="none other">
+
+      <div class="resize-handle resize-handle-right"></div>
+  <div class="resize-handle resize-handle-bottom"></div>
+  <div class="resize-handle resize-handle-left"></div>
+  
+      <div id="selector-bin"></div>
+      <div id ="header-bin" class="bin-header">
+
+             <i id="binminimize" class="fa-sharp fa-solid fa-window-minimize"></i>
+            <i onclick="binMax()" id="binmaximize" class="fa-sharp fa-regular fa-window-maximize"></i>
+            <i onclick="binRestore()" id="binrestore" class="none2 fa-regular fa-window-restore"></i>
+          <i onclick="binClose()" id="binclose" class="binclose fa-sharp fa-solid fa-xmark"></i></div>
+
+
+          <div class="d1 clickable putin"> 
+                     <button class=" im1">
+          </button>
+          <input class="binText" value="windows vs mine" type="text">
+       </div>
+</div>
+
+     <!-- what an unclean code -->
+     <div class="other" id="board1">
+      <div id="game-head">
+        <i onclick="gameClose()" id="binclose" class="binclose fa-sharp fa-solid fa-xmark"></i>
+      </div>
+     <canvas id="board"></canvas>
+</div>
+
+<div class="other" id="about">
+  <div id="about-head">
+    <i id="binminimize" class="fa-sharp fa-solid fa-window-minimize"></i>
+    <i onclick="aboutMax()" id="aboutmaximize" class="fa-sharp fa-regular fa-window-maximize"></i>
+    <i onclick="aboutMin()" id="aboutR" class="none2 fa-regular fa-window-restore"></i>
+  <i onclick="aboutClose()" id="binclose" class="binclose fa-sharp fa-solid fa-xmark"></i>
+</div>
+
+<div class="about-content">
+  <div class="resize-handle rre1 resize-handle-right"></div>
+  <div class="resize-handle bre1 resize-handle-bottom"></div>
+  <div class="resize-handle lre1 resize-handle-left"></div>
+  
+  <h1>About</h1>
+  <div class="hr"></div>
+  <p>
+    Device name : Descktop <br>
+    Processor : intell core(TM) i99-999999U @ 99.50GHz   999.70 GHz<br>
+    Installed RAM : 999999GB <br>
+    Device ID : fjdhg9-C39B-4gg5-B453D-60258jfjvA542nooncecares<br>
+    Product ID : 0000-0000-0000-AAAA<br>
+    System Type : 999Bit operating system x999-based processor<br>
+    Pen and Touch : Touch support with 9999 touch points
+  </p>
+ 
+
+</div>
+</div>
+<div class="other" id="browes">
+  <div class="resize-handle rre2 resize-handle-right"></div>
+  <div class="resize-handle bre2 resize-handle-bottom"></div>
+  <div class="resize-handle lre2 resize-handle-left"></div>
+  <div id="web-head">
+    
+    <i id="binminimize" class="fa-sharp fa-solid fa-window-minimize"></i>
+    <i onclick="webMax()" id="webM" class="fa-sharp fa-regular fa-window-maximize"></i>
+    <i onclick="webR()" id="webR" class="none2 fa-regular fa-window-restore"></i>
+  <i onclick="webClose()" id="binclose" class="binclose fa-sharp fa-solid fa-xmark"></i>
+  </div>
+
+<div class="web">
+
+  <script async src="https://cse.google.com/cse.js?cx=05843c0f24a4d4d91">
+  </script>
+  <div class="gcse-search"></div>
+  <style>
+    .gsc-modal-background-image , .gsc-modal-background-image-visible{
+      display: none;
+    }
+    .gsc-results-wrapper-overlay , .gsc-results-wrapper-visible{
+      box-shadow: none;
+     
+      margin: 0;
+     width: 95%;
+     margin-left: 100;
+     right: 0;
+    }
+   
+  </style>
+
+</div>
+</div>
+<div class="other" id="folder">
+
+  <div class="resize-handle rre3 resize-handle-right"></div>
+  <div class="resize-handle bre3 resize-handle-bottom"></div>
+  <div class="resize-handle lre3 resize-handle-left"></div>
+
+  <div id="folder-head">
+    <i id="binminimize" class="fa-sharp fa-solid fa-window-minimize"></i>
+    <i onclick="FMax()" id="FMax" class="fa-sharp fa-regular fa-window-maximize"></i>
+    <i onclick="FR()" id="FR" class="none2 fa-regular fa-window-restore"></i>
+  <i onclick="FClose()" id="binclose" class="binclose fa-sharp fa-solid fa-xmark"></i>
+  </div>
+<div id="sef"></div>
+  <div class="d1 clickable putin"> 
+    <button ondblclick="img1()" class=" im1 img1">
+</button>
+<input class="binText" value="dragon" type="text">
+</div>
+
+<div class="d1 clickable putin"> 
+  <button ondblclick="img2()" class=" im1 img2">
+</button>
+<input class="binText" value="another dragon" type="text">
+</div>
+
+<div class="d1 clickable putin"> 
+  <button ondblclick="img3()" class=" im1 img3">
+</button>
+<input class="binText" value="dragon3" type="text">
+</div>
+
+<div class="d1 clickable putin"> 
+  <button class=" im1">
+</button>
+<input class="binText" value="windows vs mine" type="text">
+</div>
+
+</div>
+
+
+
+<div class="other" id="imger">
+  <div class="resize-handle rre4 resize-handle-right"></div>
+  <div class="resize-handle bre4 resize-handle-bottom"></div>
+  <div class="resize-handle lre4 resize-handle-left"></div>
+<div id="imger-head">
+
+  <i id="binminimize" class="fa-sharp fa-solid fa-window-minimize"></i>
+  <i onclick="IMax()" id="IMax" class="fa-sharp fa-regular fa-window-maximize"></i>
+  <i onclick="Ir()" id="IR" class="fa-regular fa-window-restore"></i>
+<i onclick="IClose()" id="binclose" class="dbinclose fa-sharp fa-solid fa-xmark"></i>
+
+</div>
+
+<img id="imge1"  class="imge" src="src/1.jpg">
+<img id="imge2"  class="imge" src="src/2.jpg">
+<img id="imge3"  class="imge" src="src/3.jpg">
+
+
+</div>
+
+ <script src="main.js"> </script>
+
+</body>
+<style>
+
+.gsc-results-wrapper-overlay {
+  position: relative !important;
+  max-width: 95%;
+  max-height:85vh ;
+  overflow-y: scroll;
+}
+
+</style>
+</html>
